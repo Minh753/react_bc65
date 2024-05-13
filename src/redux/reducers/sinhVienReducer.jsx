@@ -28,7 +28,9 @@ const sinhVienReducer = createSlice({
       if (index !== -1) {
         state.arrSinhVien[index] = { maSinhVien, tenSinhVien, email, soDienThoai };
       }
-    }
+      state.sinhVienEdit = action.payload;
+    },
+    
   }
 });
 
